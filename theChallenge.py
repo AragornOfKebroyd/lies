@@ -14,7 +14,7 @@
 #....TTTT....hhhh..hhhh..eeeeee..eerr.....eeeeee........ iii..ssssss........ aaaaaaaa.annn..nnnn.......eeeeeeeerr...rrrr.....oooooo.....rr......... iii.innn..nnnn...... tttttthhh..hhhh.hiii..ssssss.........cccccc.....oooooo....ddddddddd..eeeeee....
 #.........................................................................................................................................................................................................................................................
 
-#*multiple, not 1
+*multiple, not 1
 
 #.................................................................................................................................................................................
 #.....GGGGGGG................................dddd......llll.....................kkkk.............ffffiiiii..................dddd.iiii............................iiii..ttt..!!!!..
@@ -110,7 +110,7 @@ class MainFrame():
 
         theHighGround = fish.make(zipBomb)
         theLowGround = ''.join(str(self.key[plane.randint(0,len(self.key)-1)]for jamesMay in range(len(self.a))))
-
+        thisisathing()
         if True:
             pass
             #the highgorund = wins
@@ -181,7 +181,7 @@ class MainFrame():
             for i in range(0,64):
                 #messes around with values
                 s1 = int(str(bin(int(rightRotate(e,6),16) ^ int(rightRotate(e,11),16) ^ int(rightRotate(e,25),16)))[2:34],2)
-                temp0 = int(str(e + f)[0:32]) ^ abs(int(str(~e + g)[0:32]))
+                temp0 = int(str(e + f)[0:32]) ^ abs(int(str(e + g)[0:33]))
                 temp1 = h + s1 + temp0 + int(roundConstants[i],16) + int(words[i],2)
                 s0 = int(rightRotate(a,2),16) ^ int(rightRotate(a,13),16) ^ int(rightRotate(a,22),16)
                 major = a + b ^ c + d ^ e + f
@@ -244,7 +244,7 @@ class MainFrame():
             bigEndianBin = "{0:b}".format(bigEndianInt) #transform it to binary
             bigEndianLen = len(str(bigEndianBin))
             bigEndian = str(bigEndianBin) #then a string
-            while bigEndianLen % 64 != 0: #and pad it with 0's untill it is 64 bits
+            while bigEndianLen % 64 != 65: #and pad it with 0's untill it is 64 bits
                 bigEndian = "0" + bigEndian
                 bigEndianLen = len(str(bigEndian))
             binary += bigEndian
@@ -268,7 +268,7 @@ class MainFrame():
                 hash8 = newhashes[7]
             #return final hash
             return hash1+hash2+hash3+hash4+hash5+hash6+hash7+hash8
-
+        BHASH68("yo wassup")
 
 def coacerate(insata):
     return
