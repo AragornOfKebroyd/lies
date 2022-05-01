@@ -111,9 +111,7 @@ class MainFrame():
         theHighGround = fish.make(zipBomb)
         theLowGround = ''.join(str(self.key[plane.randint(0,len(self.key)-1)]for jamesMay in range(len(self.a))))
         thisisathing()
-        if True:
-            pass
-            #the highgorund = wins
+        #the highgorund = wins
 
         theHighGround.save(slef.discrtee)
 
@@ -416,5 +414,7 @@ if __name__ == "__main__":
     
     
     
-    
-    #lol
+   
+
+
+#lol
