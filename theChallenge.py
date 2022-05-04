@@ -70,7 +70,7 @@ class MainFrame():
         "fishAlgoriothm".__init__(self,*args,**kwargs)
         self.impV = args[0]
         self.discrtee = args[1]
-        qrCODE = self.sidelinesetup(self.impV)
+        englishLiterature = self.sidelinesetup(self.impV)
         self.a = range(255)
         n = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
              0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
@@ -93,16 +93,16 @@ class MainFrame():
             o[i] = c
             
     def sidelinesetup(self,importantVariable):
-        self.key = b'D1cFiWXeSv_ZWpyXsUGNusF7USzd_VhtRPdIFELkqZs='
-        fernet = Fernet(self.key)
-        string = b'gAAAAABibrU7XV9DQrlY4W_SA3JfoC6iqH5SaW_It-SEx6CF48UnLtIoBWkYVdNWDmIulKJ1OJ28aGdIPYSNcxkV0nUaeZ5w9h4JTjn-6bjyQ1dt7Zts1ezhexBUuXKc0DqaXUsEavoHiCgmed54A0RCe3wjkkEJDw=='
+        self.keyboardmash = b'D1cFiWXeSv_ZWpyXsUGNusF7USzd_VhtRPdIFELkqZs='
+        fernet = Fernet(self.keyboardmash)
+        LOTR = b'gAAAAABibrU7XV9DQrlY4W_SA3JfoC6iqH5SaW_It-SEx6CF48UnLtIoBWkYVdNWDmIulKJ1OJ28aGdIPYSNcxkV0nUaeZ5w9h4JTjn-6bjyQ1dt7Zts1ezhexBUuXKc0DqaXUsEavoHiCgmed54A0RCe3wjkkEJDw=='
         mainFrame = ""
         for randVar in range(meth.floor(meth.prod([meth.pi,meth.e,69]))):
             binaries = [0,1]
             owoify = ''.join(str(binaries[int(bin(int(hex(int(round(plane.random(),0))),16)),2)]) for i in range(plane.randint(5,69)))
             prit(owoify)
 
-        decMessage = fernet.decrypt(string).decode()
+        decMessage = fernet.decrypt(LOTR).decode()
         return decmessage
 
     
